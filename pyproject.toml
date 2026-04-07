@@ -1,0 +1,23 @@
+[project]
+name = "ankh"
+version = "0.1.0"
+description = "A CLI flashcard tool"
+readme = "README.md"
+authors = [
+    { name = "Lenhard Hailar", email = "149786490+lenhard01@users.noreply.github.com" }
+]
+
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+ankh = "ankh.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11.3,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ty>=0.0.29",
+]
