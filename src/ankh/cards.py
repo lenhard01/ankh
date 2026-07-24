@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Lenhard Hailar
 import json
 from dataclasses import asdict, dataclass
 from datetime import date
@@ -15,7 +16,7 @@ class Card:
     interval_days: int = 1
 
 
-def load_cards():
+def load_cards() -> list[Card]:
     if not ANKH_FILE.exists():
         return []
     with ANKH_FILE.open() as filepath:
