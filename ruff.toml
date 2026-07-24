@@ -2,43 +2,27 @@ line-length = 88
 indent-width = 4
 
 [lint]
-select = [
+extend-select = [
   "A",
-  "AIR",
   "ANN",
   "ARG",
   "ASYNC",
-  "B",
-  "BLE",
-  "C4",
   "C90",
   "CPY",
-  "DOC",
-  "DJ",
-  "DTZ",
-  "E",
   "EM",
   "EXE",
-  "F",
-  "FAST",
   "FBT",
-  "FIX",
-  "FLY",
   "FURB",
   "G",
-  "I",
   "ICN",
-  "INT",
   "INP",
-  "ISC",
   "LOG",
   "N",
-  "NPY",
-  "PD",
   "PERF",
   "PGH",
-  "PIE",
-  "PL",
+  "PLC",
+  "PLE",
+  "PLW",
   "PT",
   "PTH",
   "PYI",
@@ -46,21 +30,20 @@ select = [
   "RET",
   "RSE",
   "S",
-  "SIM",
   "SLF",
   "SLOT",
-  "T10",
   "T20",
   "TC",
-  "TD",
   "TID",
+  "TD",
+  "FIX",
   "TRY",
+  "B",
+  "C4",
+  "SIM",
   "UP",
   "RUF",
-  "W",
-  "YTT",
 ]
-
 
 ignore = ["E501", "ANN401", "ISC001", "W191"]
 
@@ -74,10 +57,13 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 [lint.pycodestyle]
 max-doc-length = 72
 
+[lint.flake8-copyright]
+author = "Lenhard Hailar"
+notice-rgx = "(?i)Copyright \\(C\\) \\d{4}"
+
 [format]
 quote-style = "double"
 indent-style = "space"
 line-ending = "auto"
 docstring-code-format = true
 docstring-code-line-length = 72
-
