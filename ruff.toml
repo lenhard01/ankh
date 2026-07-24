@@ -8,7 +8,6 @@ extend-select = [
   "ARG",
   "ASYNC",
   "C90",
-  "CPY",
   "EM",
   "EXE",
   "FBT",
@@ -51,15 +50,11 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [lint.per-file-ignores]
 "src/**/*.py" = ["T20"]
-"tests/**/*.py" = ["S101", "ANN201", "ANN202", "CPY001"]
+"tests/**/*.py" = ["S101", "ANN201", "ANN202"]
 "__init__.py" = ["F401"]
 
 [lint.pycodestyle]
 max-doc-length = 72
-
-[lint.flake8-copyright]
-author = "Lenhard Hailar"
-notice-rgx = "(?i)Copyright \\(C\\) \\d{4}"
 
 [format]
 quote-style = "double"
